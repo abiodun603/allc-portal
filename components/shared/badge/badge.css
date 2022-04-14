@@ -1,0 +1,27 @@
+.badge{
+    padding: 3px 11px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    width: 70px !important;
+    font-size: 11px;
+    text-align: center;
+}
+
+.badge-fail {
+    background-color: #E72E1E;
+}
+
+.badge-pending {
+    background: rgba(241, 180, 76, 0.180392);
+    color: #F1B44C;
+}
+
+.badge-success {
+    color: #34C38F;
+    background: rgba(52, 195, 143, 0.180392);
+}
+
+.badge-danger {
+    background-color: rgba(244, 106, 106, 0.180392);
+    color: #F46A6A;
+}
