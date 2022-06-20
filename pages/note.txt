@@ -1,0 +1,38 @@
+
+          <div className="flex flex-col  mb-3">
+            <div className="bg-kpink w-full py-3 px-3 rounded-lg ease-out duration-500 hover:scale-105">
+              {/* title */}
+              <h3 className='text-black font-semibold text-base'>Internal Operations Portal User Interface Design</h3>
+              {/* desc */}
+              <p className='text-black font-light text-xs mt-3 w-[80%]'>
+                Create user screens for the internal operations portal, 
+                to replace the current screen. 
+              </p>
+
+              {/* timelinke */}
+              <div className='flex mt-3'>
+                <p className='text-black font-normal text-sm mr-3'>Last Updated: <span className='font-semibold'>3 Weeks ago</span></p>
+                <p className='text-black font-normal text-sm'>Deadline: <span className='font-semibold'>14-02-2022</span></p>
+              </div>
+              {/* status bar */}
+              <div className='flex items-center justify-center w-fit rounded-full mt-4 h-[30px] px-6 bg-white'>
+                <p className='font-normal text-sm '>Overdue</p> 
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="bg-klightyellow w-full py-3 px-3 rounded-lg ease-out duration-500 hover:scale-105">
+              {/* title */}
+              <h3 className='text-black font-semibold text-base'>Internal Operations Portal User Interface Design</h3>
+              {/* desc */}
+              <p className='text-black font-light text-xs mt-3 w-[80%]'>
+                Create user screens for the internal operations portal, 
+                to replace the current screen. 
+              </p>
+              {/* status bar */}
+              <div className='flex items-center justify-center w-fit rounded-full mt-4 h-[30px] px-6 bg-white'>
+                <p className='font-normal text-sm'>Active</p> 
+              </div>
+            </div>
+          </div>

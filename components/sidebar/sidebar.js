@@ -8,32 +8,34 @@ import MenuItemsList from '../MenuItemsList'
 import { Avatar, Divider } from '@mui/material'
 import Image from 'next/image'
 import one from "../../assets/image/one.png"
+import { useSelector } from 'react-redux'
+import { getAuthName } from '../../redux/features/authSlice'
 
 export const Sidebar = ({children}) => {
+  const name = useSelector(getAuthName)
+  console.log(name);
   return (
     <>
-        <SidebarWrapper>
-            {/* HMO LOGO */}
-            <div className = "hmo_logo mb-12 flex flex-col">
-              {/* image */}
-              <Avatar
-                alt="Remy Sharp"
-                src={"../../assets/image/one.png"}
-                sx={{ width: 186, height: 186, cursor: "pointer" }}
-              >
-                  <Image src={one} layout="fill" />
-              </Avatar>
-                {/* name */}
-                <h2 className='mt-4 text-black font-semibold'>David Olorunda</h2>
-                <Divider variant="" className='w-full mt-8' />
-            </div>
-
-            {/* Profile Listing */}
-            {/* <CSidebarNav style={{listStyle: "none"}}> */}
-            <MenuItemsList options={MENU_ITEMS} />            
-            {/* </CSidebarNav> */}
-
-        </SidebarWrapper>
+      <SidebarWrapper>
+        {/* HMO LOGO */}
+        <div className = "hmo_logo mb-12 flex flex-col">
+          {/* image */}
+          <Avatar
+            alt="Remy Sharp"
+            src={"../../assets/image/one.png"}
+            sx={{ width: 186, height: 186, cursor: "pointer" }}
+          >
+            <Image src={one} layout="fill" />
+          </Avatar>
+            {/* name */}
+            <h2 className='mt-4 text-black font-semibold mb-3'>{name}</h2>
+            <Divider variant="" className='w-full mt-8' />
+        </div>
+        {/* Profile Listing */}
+        {/* <CSidebarNav style={{listStyle: "none"}}> */}
+        <MenuItemsList options={MENU_ITEMS} />            
+        {/* </CSidebarNav> */}
+      </SidebarWrapper>
     </>
   )
 }
